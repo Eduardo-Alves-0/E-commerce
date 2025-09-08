@@ -2,6 +2,7 @@ export abstract class Livro {
     private _nome: string
     private _autor: string
     private _genero: number
+    private _tipo: number
     private _preco: number
     private _anoPublicacao: number
     private _editora: string
@@ -11,6 +12,7 @@ export abstract class Livro {
         nome: string,
         autor: string,
         genero: number,
+        tipo: number,
         preco: number,
         anoPublicacao: number,
         editora: string,
@@ -19,6 +21,7 @@ export abstract class Livro {
         this._nome = nome
         this._autor = autor
         this._genero = genero
+        this._tipo = tipo
         this._preco = preco
         this._anoPublicacao = anoPublicacao
         this._editora = editora
@@ -79,5 +82,29 @@ export abstract class Livro {
 
     set estoque(estoque: number) {
         this._estoque = estoque
+    }
+
+    public visualizar(): void {
+        let tipo = ""
+
+        switch (this._tipo) {
+            case 1:
+                tipo = 'Ebook'
+                break
+            case 2:
+                tipo = 'Livro fisico'
+                break
+        }
+        console.log("\n\n*****************************************************");
+        console.log("Dados do Livro:");
+        console.log("*****************************************************");
+        console.log("Nome do livro: " + this._nome);
+        console.log("Autor: " + this._autor);
+        console.log("Genero: " + this._genero);
+        console.log("Tipo: " + this._tipo);
+        console.log("Ano de Pulicação: " + this._anoPublicacao);
+        console.log("Editora: " + this._editora);
+        console.log("Preco: " + this._preco.toFixed(2));
+
     }
 }
