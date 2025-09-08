@@ -9,7 +9,6 @@ export function main() {
         console.log('---------------------------------------------------')
         console.log('          📚 Sua cidade, seu marketplace 📚        ')
         console.log('===================================================')
-
         console.log('')
         console.log('  1 - Criar Pedido')
         console.log('  2 - Listar Itens no Carrinho')
