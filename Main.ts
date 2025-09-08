@@ -4,10 +4,12 @@ export function main() {
     let opcao: number = 0
 
     do {
-        console.log('==============================================')
-        console.log('                   iCITY                      ')
-        console.log('          Sua cidade, seu marketplace         ')
-        console.log('==============================================')
+        console.log('===================================================')
+        console.log('                   Biblioteca                      ')
+        console.log('---------------------------------------------------')
+        console.log('          📚 Sua cidade, seu marketplace 📚        ')
+        console.log('===================================================')
+
         console.log('')
         console.log('  1 - Criar Pedido')
         console.log('  2 - Listar Itens no Carrinho')
@@ -20,7 +22,7 @@ export function main() {
 
         opcao = inputUser.questionInt('Digite a opção que você deseja')
 
-        if(opcao === 6){
+        if (opcao === 6) {
             sobre()
             process.exit(0)
         }
