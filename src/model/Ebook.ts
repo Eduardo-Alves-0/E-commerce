@@ -8,14 +8,15 @@ export class Ebook extends Livro {
         nome: string,
         autor: string,
         genero: number,
+        tipo: number,
         preco: number,
         anoPublicacao: number,
         editora: string,
         estoque: number,
         formato: string,
         tamanho: number
-    ){
-        super(nome, autor, genero, preco, anoPublicacao, editora, estoque)
+    ) {
+        super(nome, autor, genero, tipo, preco, anoPublicacao, editora, estoque,)
         this._formato = formato
         this._tamanho = tamanho
     }
@@ -24,7 +25,7 @@ export class Ebook extends Livro {
         return this._formato
     }
 
-    set formato(formato: string){
+    set formato(formato: string) {
         this._formato = formato
     }
 
@@ -32,7 +33,15 @@ export class Ebook extends Livro {
         return this._tamanho
     }
 
-    set tamanho (tamanho: number){
+    set tamanho(tamanho: number) {
         this._tamanho = tamanho
+    }
+
+    public visualizar(): void {
+        super.visualizar()
+        console.log('===================================')
+        console.log(`Formato: ${this.formato}`)
+        console.log(`Tamanho: ${this.tamanho}`)
+        console.log('===================================')
     }
 }
