@@ -7,7 +7,7 @@ export function main() {
         console.log('===================================================')
         console.log('                   Biblioteca                      ')
         console.log('---------------------------------------------------')
-        console.log('          📚 Sua cidade, seu marketplace 📚        ')
+        console.log('          📚 Sua cidade, sua biblioteca 📚        ')
         console.log('===================================================')
         console.log('')
         console.log('  1 - Criar Pedido')
