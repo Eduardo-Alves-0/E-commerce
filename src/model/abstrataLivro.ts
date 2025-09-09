@@ -84,6 +84,14 @@ export abstract class Livro {
         this._estoque = estoque
     }
 
+    get tipo() {
+        return this._tipo
+    }
+
+    set tipo(tipo: number){
+        this._tipo = tipo
+    }
+
     public visualizar(): void {
         let tipo = ""
 

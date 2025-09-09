@@ -1,4 +1,4 @@
-import { Livro } from "./Livro";
+import { Livro } from "./abstrataLivro";
 
 export class LivroFisico extends Livro {
 
