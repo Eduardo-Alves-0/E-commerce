@@ -1,4 +1,4 @@
-import { Livro } from "./Livro";
+import { Livro } from "./abstrataLivro";
 
 export class Ebook extends Livro {
     private _formato: string
