@@ -57,7 +57,7 @@ Sistema de gerenciamento de biblioteca desenvolvido em **TypeScript** aplicando 
 1. **Clone o repositório**
 ```bash
 git clone https://github.com/Eduardo-Alves-0/BiblioSystem.git
-cd BiblioSystem
+cd SistemaBiblioteca
 ```
 
 2. **Instale as dependências**
@@ -171,6 +171,3 @@ Este projeto está sob licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais
 - GitHub: [@Eduardo-Alves-0](https://github.com/Eduardo-Alves-0)
 - Email: eduardu0220@gmail.com
 
----
-
-⭐ **Se este projeto te ajudou, deixa uma estrela!** ⭐
