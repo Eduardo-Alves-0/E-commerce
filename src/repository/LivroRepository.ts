@@ -1,4 +1,4 @@
-import { Livro } from "../model/abstrataLivro";
+import { Livro } from "../model/Livro";
 
 export interface LivroRepository {
     ProcurarPorNome(nome: string): void
