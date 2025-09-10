@@ -1,4 +1,4 @@
-import { Livro } from "../model/abstrataLivro";
+import { Livro } from "../model/Livro";
 import { LivroRepository } from "../repository/LivroRepository";
 
 export class LivroController implements LivroRepository {
